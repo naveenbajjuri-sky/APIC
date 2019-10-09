@@ -1,0 +1,27 @@
+info:
+  name: adsmart
+  title: AdSmart
+  version: 1.0.0
+gateways:
+- datapower-api-gateway
+plans:
+  default-plan:
+    rate-limits:
+      default:
+        value: 100/1hour
+    title: Default Plan
+    description: Default Plan
+    approval: false
+visibility:
+  view:
+    type: public
+    orgs: []
+    enabled: true
+  subscribe:
+    type: authenticated
+    orgs: []
+    enabled: true
+product: 1.0.0
+apis:
+  sky-adsmart1.0.0:
+    $ref: 04102019093331\sky-adsmart_1.0.0.yaml
